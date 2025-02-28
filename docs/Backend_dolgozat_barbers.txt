@@ -1,0 +1,36 @@
+A dolgozat során API-t kell készítened, amely egy barber shop-ot valósít meg. A feladatot
+gondosan végezd el, és törekedj arra, hogy az összes fellépő problémára megoldást készíts! A
+cégnél vannak barberek, akikhez jelentkezni lehet hajvágásra-szakálligazításra.
+A dolgozatot felhasználó felület hiányában a Postman-ben (asztali verzióban) tesztelheted írás
+közben, és a javítás is ennek segítségével fog történni. Az API JSON formátumban várja a
+kéréseket, és JSON formátumban adja vissza a válaszokat.
+Az adatbázis a következő:
+1. barbers
+- id: automaikusan növekvő egész érték
+- barber_name: szöveg
+2. appointments
+- id: automatikusan növekvő egész érték
+- name: szöveg
+- barber_id: egész érték, idegen kulcs a barbers.id-ra
+- appointment: datetime típusú mező
+1.Készítsd el a migration-öket! (3p)
+2.Készítsd el a Model-leket! (4p)
+3.Készítsd el a BarberController-t és az AppointmentController-t! (2p)
+4.Hozz létre api végpontokat: (6p)
+
+a. api/barbers
+b. api/appointments
+Az API végpontok képesek legyenek GET, POST, és DELETE kérések kiszolgálására!
+
+Magyar nyelvű [hiba]üzenetekkel dolgozz! A megvalósítás során rád bízom, milyen módon
+programozod le. (A magyar nyelvű attribútumnevek opcionálisak, azonban néztünk rá megoldást)
+5. Egy barbert az adatbázisba való rögzítéskor a barber nevének kötelező megadásával,
+maximum 255 hosszú szöveggel fogadunk el! (8p)
+6. A barberek lekérdezésekor közöljük az összes adatot! (1p)
+7. Legyen lehetőség a fodrászok idő közbeni elbocsátására! (Itt felhívnám a figyelmet a
+dolgozat leírásának második mondatára.) (1p)
+8. Időpontfoglaláskor a név megadása kötelező, maximum 255 hosszú szöveget fogadunk el.
+A barber kiválasztása kötelező, csak ott dolgozó barberhez lehet időpontot foglalni, egész
+érték! Az időpont megadása kötelező, és mivel időpont, így dátumot várunk rá! (14p)
+9. Az időpontok lekérdezésekor közöljük az összes adatot! (1p)
+10. Legyen lehetőség egy időpont lemondására! (1p)
